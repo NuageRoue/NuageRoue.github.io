@@ -165,7 +165,8 @@
     a { color:var(--accent); }
     
     @media (max-width: 640px) {
-      header nav { visibility: none; }
+      .name {min-width: 100%;}
+      header nav { visibility: hidden; }
       .gallery { grid-template-columns: 1fr; }
       .me h1 { font-size: 1.8rem; }
     }
