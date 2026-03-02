@@ -1,0 +1,171 @@
+  /* ── Variables ── */
+    :root {
+      --border: #242F40;
+      --surface: #CCA43B;
+      --text: #E5E5E5;
+      --muted: #888;
+      --accent: #CCA43B;
+      --bg: #363636;
+      --header-h: 60px;
+      --gap: 2rem;
+    }
+
+    
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Georgia', serif;
+      line-height: 1.7;
+    }
+
+    
+    header {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: var(--header-h);
+      background: var(--border);
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 2rem;
+      z-index: 100;
+    }
+
+    header .name {
+      font-size: 1rem;
+      font-family: 'Courier New', monospace;
+      letter-spacing: 0.05em;
+      color: var(--accent);
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--muted);
+      font-family: 'Courier New', monospace;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      transition: color 0.2s;
+    }
+
+    nav a:hover { color: var(--accent); }
+
+    
+    main {
+      padding-top: var(--header-h);
+      max-width: 960px;
+      margin: 0 auto;
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+
+    .me {
+      padding: 5rem 0 3rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .me h1 {
+      font-size: 2.5rem;
+      font-weight: normal;
+      margin-bottom: 1rem;
+      color: var(--accent);
+    }
+
+    .me p {
+      color: var(--muted);
+      max-width: 560px;
+    }
+
+    /* ── Section projet ── */
+    .project {
+      padding: 4rem 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h2 {
+      font-size: 1.4rem;
+      font-weight: normal;
+      color: var(--accent);
+      margin-bottom: 0.25rem;
+      font-family: 'Courier New', monospace;
+    }
+
+    .project .tag {
+      font-size: 0.75rem;
+      color: var(--muted);
+      font-family: 'Courier New', monospace;
+      margin-bottom: 1.5rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 1.5rem;
+    }
+
+    .gallery img {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 2px;
+      background: var(--surface);
+    }
+
+    
+    .gallery img::placeholder {
+      width: 100%;
+      background: var(--surface);
+      border-radius: 2px;
+      text-align: center;
+    }
+
+    .description p {
+      color: var(--text);
+    }
+
+    
+    .about {
+      padding: 4rem 0;
+      width: 100%;
+    }
+
+    .about h2 {
+
+      margin-bottom: 1rem;
+    }
+
+
+    
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 1.2rem;
+      text-align: center;
+      font-family: 'Courier New', monospace;
+      font-size: 1rem;
+      color: var(--muted);
+    }
+
+
+    #contact {
+      width: 100%;
+        margin-top:1rem;
+        text-align: center;
+    }
+
+    a { color:var(--accent); }
+    
+    @media (max-width: 640px) {
+      nav ul { gap: 1rem; }
+      .gallery { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 1.8rem; }
+    }

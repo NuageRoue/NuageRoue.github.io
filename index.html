@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clement OLIVEIRA – Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <span class="name">Clement OLIVEIRA - NuageRoue</span>
+    <nav>
+      <ul>
+        <li><a href="#raytracer">Raytracer</a></li>
+        <li><a href="#raycaster">Raycaster engine</a></li>
+        <li><a href="#WaveFunction">Wave Function Collapse</a></li>
+        <li><a href="#donjons">2D Dungeon Generator</a></li>
+        <li><a href="#gamejams">Game Jams</a></li>
+        <li><a href="#academic">Academic Projects</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="me">
+      <h1>Computer Graphics & Digital Imagery</h1>
+      <p>4th year engineering/Master's level student specializing in computer graphics and digital imaging. I work on rendering, procedural generation, and real-time graphics. Here are some of my projects, for your consideration.</p>
+    </section>
+
+    <section class="project" id="raytracer">
+      <h2>Raytracer</h2>
+      <div class="tag">C++ - Image synthesis</div>
+      <div class="gallery">
+        <img src="images/raytracing/raytracer_1.png" alt="Raytracer: 1st render" />
+        <img src="images/raytracing/raytracer_2.png" alt="Raytracer: 2nd render" />
+        <img src="images/raytracer_3.jpg" alt="coming soon!" />
+      </div>
+      <div class="description">
+      <p>Using Peter Shirley's, Trevor D. Black's and Steve Hollasch's book series <a href="https://raytracing.github.io/">Ray Tracing in One Weekend</a>, I am implementing a (basic) sample based multi-threaded Monte Carlo 
+        Ray Tracer in C++, with reflections, refraction, emission, Noise, Constant Density Mediums...</p>
+      <p>I plan on making a small Editor for it using Unity or Godot, inspired by old version of the software <a href="https://www.daz3d.com/bryce-7-pro">Bryce 3D</a>.</p>
+      </div>
+    </section>
+
+    <section class="project" id="raycaster">
+      <h2>Raycaster based 3D engine</h2>
+      <div class="tag">C++ - Real time Rendering</div>
+      <div class="gallery">
+        <img src="images/raycast/raycast_1.png" alt="coming soon!" />
+        <img src="images/raycast/raycast_2.png" alt="coming soon!" />
+      </div>
+            <div class="description">
+      <p>Inspired by Wolfenstein 3D, its source code and its analysis provided by Fabien Sanglard in his book 
+        <a href="https://fabiensanglard.net/gebbwolf3d/">Game Engine Black Book: Wolfenstein 3D</a>, I am implementing a "3D" game engine, with a level editor, 
+        both fully written in C++ using only the <a href="https://www.libsdl.org/">SDL2</a> and <a href="https://github.com/ocornut/imgui">Dear Imgui</a>.</p>
+        <u>the main idea here is to use it to develop some small games in the style of doom, I.E. an episodic format.</u>
+      </div>
+    </section>
+
+    <section class="project" id="WaveFunction">
+      <h2>Wave Function Collapse Algorithm</h2>
+      <div class="tag">C++ - Procedural Generation</div>
+      <div class="gallery">
+        <img src="" alt="coming soon!" />
+        <img src="" alt="coming soon!" />
+        <img src="" alt="coming soon!" />
+      </div>
+            <div class="description">
+      <p>
+        I am implementing in C++ the <a href="https://github.com/mxgmn/WaveFunctionCollapse">Wave Function Collapse algorithm</a>, in its two "variants" 
+        (the "tile" model and the "overlapping" model).
+      </p>
+      <p>
+        My main objective here is to build a small tool to generate images using the algorithm, 
+        but I might add to it some animations to show how the output is generated.
+      </p>
+      <p>
+        I will also definitely implement it in 3D as soon as I find an interesting use case for it, probably in the project below.
+      </p> 
+      </div>
+    </section>
+
+    <section class="project" id="dungeons">
+      <h2>2D Dungeon Generator</h2>
+      <div class="tag">Unity - Procedural Generation</div>
+      <div class="gallery">
+        <img src="images/dungeon/dungeon_1.jpg" alt="coming soon!" />
+        <img src="images/dungeon/dungeon_2.jpg" alt="coming soon!" />
+        <img src="images/dungeon/dungeon_3.jpg" alt="coming soon!" />
+      </div>
+            <div class="description">
+      <p>Using Binary Space Partitionning and Mathematical Morphology, I implemented a modular dungeon generator in Unity, which takes images and arranges them in a cave fashion, with ruins, catacombs...</p>
+      <p>I also experimented a bit with shaders and visual effects to make the room look more interesting.</p>
+      <p>I do plan on remaking it, using 3D assets to do some kind of fake 2D, in the style of the game <a href="https://en.wikipedia.org/wiki/Core_Keeper">Core Keeper</a>.</p>
+      </div>
+    </section>
+
+    <section class="project" id="gamejams">
+      <h2>Game Jams</h2>
+      <div class="tag">Unity - Game Design</div>
+      <div class="gallery">
+        <img src="images/jams/jams_1.png" alt="Game jam 1" />
+        <img src="images/jams/jams_2.png" alt="Game jam 2" />
+        <img src="images/jams/jams_3.png" alt="Game jam 3" />
+      </div>
+            <div class="description">
+      <p>I participated in multiple game jams throughout the years, both alone and in teams, with other developers or artists.</p>
+      <p>Here is an example of my work. You can find my "published" games on itch.io, under my alias, <a href="https://nuageroue378723.itch.io/">Nuageroue</a>.</p>
+      <p>I also participated in an art project centered around projecting bits of games onto paintings, to interact with them.</p>
+
+      <p>all done using Unity, I also participated to a school gamejam where my team and I built a 2D engine in C++.</p>
+      </div>
+    </section>
+
+        <section class="project" id="academic">
+      <h2>Academic Projects</h2>
+      <div class="tag">School</div>
+            <div class="description">
+      <p>Throughout my studies at ESIR, I worked on multiple small projects aimed to build a better understanding of the courses.</p>
+      <p>Mostly done in duo, they cover a wide array of domains:</p>
+      <ul>
+<li>We developed a compiler for a small functional language in C++, covering lexing, parsing, and code generation.</li>
+<li>We implemented variational methods for image regularization, including Tikhonov regularization and Euler-Lagrange optimization, applied to denoising and restoration problems, but also 
+  image convolution from scratch, and seam carving for content-aware image resizing.</li>
+<li>We built a text editor from scratch in C++ using only SDL2, handling rendering, input, and cursor management without any high-level UI framework.</li>
+
+      </ul>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <h2>About</h2>
+      <p>
+        I'm a 2nd year engineering student specializing in digital imaging. 
+        My coursework covers image synthesis, image processing, computer vision, AI, game development with Unity, and many more. 
+        
+        I'm interested in image synthesis and real-time rendering, which are subjects I try to expand and explore through all the projects you have just seen, but also by reading academic papers and books on those.
+
+        I also completed an internship in VR in 2025 where I explored Godot's strength for AR/VR experiences by building small demos. Most notably, I worked on hand pose recognition.
+      </p>
+      <p id="contact">
+        <a href="mailto:clement.oliveira@etudiant.univ-rennes.fr">clement.oliveira@etudiant.univ-rennes.fr</a>
+        -
+        <a href="https://github.com/NuageRoue" >GitHub</a>
+        -
+        <a href="https://nuageroue378723.itch.io/" >Itch.io</a>
+        -
+        <a href="">Resume (coming soon!)</a>
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    Clement Oliveira - 2026
+  </footer>
+
+</body>
+</html>
