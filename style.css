@@ -165,7 +165,7 @@
     a { color:var(--accent); }
     
     @media (max-width: 640px) {
-      header nav { visibility: hidden; }
+      header nav { visibility: none; }
       .gallery { grid-template-columns: 1fr; }
       .me h1 { font-size: 1.8rem; }
     }
