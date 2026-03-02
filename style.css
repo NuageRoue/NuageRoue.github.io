@@ -165,7 +165,7 @@
     a { color:var(--accent); }
     
     @media (max-width: 640px) {
-      nav ul { gap: 1rem; }
+      header nav { visibility: hidden; }
       .gallery { grid-template-columns: 1fr; }
-      .hero h1 { font-size: 1.8rem; }
+      .me h1 { font-size: 1.8rem; }
     }
